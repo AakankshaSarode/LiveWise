@@ -1,0 +1,180 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+/* Navbar */
+.navbar-custom {
+  background-color: #5595d5;
+}
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: white !important;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffcc00 !important;
+}
+
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://i.pinimg.com/originals/92/4a/33/924a3300717f45efc1f30d46b8cc4b12.jpg'); /* Replace with your path */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Sidebar inside Hero -*/
+.hero-sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 220px;
+  background-color: rgba(0, 64, 128, 0.6);
+  border-right: 2px solid #ffcc00;
+  backdrop-filter: blur(4px);
+  padding-top: 80px; 
+  color: white;
+  z-index: 10;
+}
+
+/* Sidebar Links */
+.sidebar-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #ffcc00;
+  color: #ffcc00;
+}
+/* Offcanvas Sidebar (Small Screens) */
+.sidebar-menu {
+  background-color: rgba(0, 64, 128, 0.95);
+  width: 220px;
+  color: white;
+}
+/* Hero Content */
+.hero-content {
+  padding: 20px;
+  margin-left: 0;
+}
+
+@media (min-width: 992px) {
+  .hero-content {
+    margin-left: 220px;
+  }
+
+
+
+  .main-content {
+    margin-left: 250px;
+  }
+
+  .offcanvas-header {
+    display: none;
+  }
+
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+.features {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.feature-box {
+  padding: 20px;
+  text-align: center;
+}
+.custom-height {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.contact-section {
+  background: linear-gradient(to right, #dfefff, #f3faff);
+  padding: 60px 0;
+}
+
+input,
+textarea {
+  border-radius: 0.5rem;
+  box-shadow: none !important;
+}
+
+
+.footer {
+  background-color: #004080;
+  color: white;
+  padding: 20px 0;
+}
+.card-title {
+  font-weight: 600;
+}
+.card-img-top {
+  height: 200px;         
+  object-fit: cover;     
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+/*about us*/
+.about-intro {
+  background-color: #bdd8f3; 
+  color: #003366;            
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #004080;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+
+
