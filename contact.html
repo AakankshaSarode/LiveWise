@@ -27,39 +27,43 @@
     </div>
   </nav>
 <!---ContactForm-->
-  <main class="flex-grow-1 contact-section d-flex align-items-center">
+ <main class="flex-grow-1 contact-section d-flex align-items-center">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 bg-white p-5 rounded shadow-lg">
           <h2 class="text-center mb-4">Get in Touch</h2>
-          <form>
+          
+          <!-- ✅ Formspree Integrated Form -->
+          <form action="https://formspree.io/f/xldlbbqr" method="POST">
             <div class="row mb-3">
               <div class="col-md-6">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your full name">
+                <input type="text" name="name" class="form-control" id="name" required placeholder="Your full name">
               </div>
               <div class="col-md-6">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <input type="email" name="email" class="form-control" id="email" required placeholder="you@example.com">
               </div>
             </div>
             <div class="mb-3">
               <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="subject" placeholder="Subject">
+              <input type="text" name="subject" class="form-control" id="subject" required placeholder="Subject of your query">
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Type your message..."></textarea>
+              <textarea name="message" class="form-control" id="message" rows="5" required placeholder="Type your message..."></textarea>
             </div>
             <div class="text-center">
               <button type="submit" class="btn btn-primary px-5">Send Message</button>
             </div>
           </form>
+          <!-- End of Form -->
+          
         </div>
       </div>
     </div>
   </main>
-
+<!---footer-->
   <footer class="footer mt-auto">
     <div class="container text-center py-3">
       &copy; 2025 MySite. All rights reserved.
